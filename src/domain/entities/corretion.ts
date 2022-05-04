@@ -12,9 +12,9 @@ export class Correction extends Entity <CorrectionProps>{
         super(props, id);
     }
     public create(props: CorrectionProps, id?: string){
-        // if(props.grade < 0 || props.grade > 10){
-        //     throw new Error('')
-        // }
+        if(props.grade < 0 || props.grade > 10){
+             throw new Error('')
+         }
         
         const corretion = new Correction(props, id);
 
