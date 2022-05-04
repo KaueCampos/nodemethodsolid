@@ -1,7 +1,7 @@
-import {StudentRepository} from "../../applications/repositories/StudentRepository"
+import {StudentsRepository} from "../../applications/repositories/StudentRepository"
 import { Student } from "../../domain/entities/student"
 
-export class InMemoryStudentsRepository implements StudentRepository {
+export class InMemoryStudentsRepository implements StudentsRepository {
     public items: Student[] = [];
     
     async findById(id: string): Promise<Student | null> {

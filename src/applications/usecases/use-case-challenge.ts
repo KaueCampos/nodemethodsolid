@@ -1,5 +1,5 @@
 import { Submission } from "../../domain/entities/submission";
-import { StudentRepository } from "../repositories/StudentRepository";
+import { StudentsRepository } from "../repositories/StudentRepository";
 import { ChallengesRepository } from "../repositories/ChallengeRepostory";
 type CreateChallengeSubmissionRequest = {
     studentId: string;
@@ -9,7 +9,7 @@ type CreateChallengeSubmissionRequest = {
 
 export class CreateChallengeSubmission{
     constructor(
-        private studentsRepository: StudentRepository,
+        private studentsRepository: StudentsRepository,
         private challengeRepository: ChallengesRepository,
     ){}
     async execute({studentId, challengeId}: CreateChallengeSubmissionRequest){

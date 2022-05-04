@@ -1,6 +1,6 @@
 import {Student} from "../../domain/entities/student"
 
-export interface StudentRepository{
+export interface StudentsRepository{
  findById(id: string): Promise<Student | null>;
 
 }

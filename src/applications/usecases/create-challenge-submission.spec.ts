@@ -11,8 +11,8 @@ describe('Criar caso de uso de envio de desafio', () => {
         const challengesRepository =  new InMemoryChallengesRepository();
         
         const student = Student.create({
-            name: 'Kaue',
-            email: 'kaue@example.com',
+            name : 'Kaue',
+            email: 'kaue@exemple.com'
         })
         const challenge = Challenge.create({
             title: 'Challenge 01',
@@ -22,7 +22,7 @@ describe('Criar caso de uso de envio de desafio', () => {
         studentsRepository.items.push(student);
         challengesRepository.items.push(challenge);
 
-        const sut = new CreateChallengeSubmission(
+        const sut = new CreateChallengeSubmission(   
             studentsRepository,
             challengesRepository,
         );
