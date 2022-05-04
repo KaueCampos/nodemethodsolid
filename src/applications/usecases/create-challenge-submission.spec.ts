@@ -1,7 +1,7 @@
 import {CreateChallengeSubmission} from "./use-case-challenge";
 
-describe('Create challenge submission use case', () => {
-    it('should be able to create a new challenge submission', async () => {
+describe('Requisição foi enviada com sucesso', () => {
+    it('Requisição precisa ser criada', async () => {
         const sut = new CreateChallengeSubmission();
 
         const response = await sut.execute({
