@@ -6,6 +6,9 @@ type StudentProps ={
 }
 
 export class Student extends Entity <StudentProps>{
+    static create(arg0: { name: string; email: string; }) {
+        throw new Error("Method not implemented.");
+    }
     private constructor(props: StudentProps, id?: string){
         super(props, id);
     }
